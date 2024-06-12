@@ -11,7 +11,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Bocchi The site!</title>
+    <title> | Bocchi The site!</title>
     <meta name="author" content="Gotoh_Futari" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -50,7 +50,9 @@
 
 
 
-<script src="/js/lib/home.js"></script>
+
+
+
 
 <link rel="stylesheet" href="/css/main.css" />
 
@@ -160,37 +162,17 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="home-head">
-    <div
-        id="home-background"
-        ref="homeBackground"
-        data-images="/images/backgrounds/BackGround3.jpg,/images/backgrounds/BackGround6.jpg,/images/backgrounds/BackGround13.png"
-    ></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>Bocchi The site!</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
+            <div class="article">
+    <div>
+        <h1></h1>
     </div>
-</div>
-<div
-    id="home-posts-wrap"
-    ref="homePostsWrap"
-    true
->
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/2024/06/12/2/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/6/12
+        </span>
         
         <span class="category">
             <a href="/categories/%E5%8A%A8%E6%BC%AB/">
@@ -201,132 +183,34 @@
             </a>
         </span>
         
-        <span class="date">
+        
+        <span class="tags">
             <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
+                <i class="fa-solid fa-tags fa-fw"></i>
             </span>
-            2024/6/12
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
             
-            <p>#<a target="_blank" rel="noopener" href="https://www.alipan.com/s/2VhWZajjHh9">https://www.alipan.com/s/2VhWZajjHh9</a><br>以后都会使用阿里云盘的 下载速度比较快<br>对不起 把网站搁了十天才来更新<br>不过也没人来吧（小声</p>
-
             
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
-        </span>
-        
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" style="color: #00bcd4">资源分享</a>
-        </span>
-        
-    </div>
-    <a href="/2024/06/12/2/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2024/06/02/1/">
-        <h2 class="post-title"></h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2024/6/2
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>网站搭建成功了  纪念一下罢，</p>
-<p>这个网站是用于储存《孤独摇滚！》的一些一创或二创作品的资源站</p>
-<p>当然 也会有一些别的东西啦</p>
-<p>儿童节快乐</p>
-<p>*—— Gotoh-Futari 2024&#x2F;6&#x2F;2 *</p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/2024/06/02/1/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
-    
-    <span class="current">1</span>
-    
-    
-    
-    
-</div>
-
-    </div>
-    
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">Gotoh_Futari</div>
-        <div class="description">
-            <p>波奇的小站</p>
-
-        </div>
-        
-        <div class="icon-links">
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://github.com/Gotoh-Futari">
-                    <i
-                        class="fa-brands fa-github fa-fw"
-                    ></i>
+            <span class="tag">
+                
+                <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" style="color: #ff7d73">
+                    资源分享
                 </a>
             </span>
             
-            <span class="icon-link">
-                <a href="/images/QRcode.jpg">
-                    <i
-                        class="fa-brands fa-qq fa-fw"
-                    ></i>
-                </a>
-            </span>
-            
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a target="_blank" rel="noopener" href="https://argvchs.github.io">Theme原作者:Argvchs</a>
-            </div>
-            
-        </div>
+        </span>
         
     </div>
-</div>
+    
+    <div class="content" v-pre>
+        <p>#<a target="_blank" rel="noopener" href="https://www.alipan.com/s/2VhWZajjHh9">https://www.alipan.com/s/2VhWZajjHh9</a><br>以后都会使用阿里云盘的 下载速度比较快<br>对不起 把网站搁了十天才来更新<br>不过也没人来吧（小声</p>
 
     </div>
+    
+    
+    
+    
+    
+    
     
 </div>
 
@@ -358,6 +242,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>
