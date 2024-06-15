@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>草东没有派对 单曲收集 | Bocchi The site!</title>
+    <title>草东没有派对 | Bocchi The site!</title>
     <meta name="author" content="Gotoh_Futari" />
     <meta name="description" content="Gotoh Futari的个人博客" />
     <meta name="keywords" content="Anime,Music,Rock,Blog,Code,Love" />
@@ -43,6 +43,8 @@
 
 
 
+
+<script src="https://s4.zstatic.net/ajax/libs/twikoo/1.6.31/twikoo.all.min.js"></script>
 
 
 
@@ -157,7 +159,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>草东没有派对 单曲收集</h1>
+        <h1>草东没有派对</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -185,7 +187,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" style="color: #03a9f4">
+                <a href="/tags/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/" style="color: #00a596">
                     资源分享
                 </a>
             </span>
@@ -195,7 +197,8 @@
     </div>
     
     <div class="content" v-pre>
-        <p>收集了国摇乐队-草东没有派对的单曲<br>附带歌词 专题封面等<br><a target="_blank" rel="noopener" href="https://www.alipan.com/s/rrtjCgmM296">https://www.alipan.com/s/rrtjCgmM296</a></p>
+        <h2 id="阿里云盘不知道为什么会把MP3文件清掉。。。所以以后也会用123网盘的"><a href="#阿里云盘不知道为什么会把MP3文件清掉。。。所以以后也会用123网盘的" class="headerlink" title="阿里云盘不知道为什么会把MP3文件清掉。。。所以以后也会用123网盘的"></a>阿里云盘不知道为什么会把MP3文件清掉。。。<br>所以以后也会用123网盘的</h2><p>附带了歌词和封面</p>
+<p><a target="_blank" rel="noopener" href="https://www.123pan.com/s/glDoTd-LVbaA.html">https://www.123pan.com/s/glDoTd-LVbaA.html</a></p>
 
     </div>
     
@@ -203,6 +206,10 @@
     
     
     
+    
+    <div id="comment">
+        <div id="twikoo-container"></div>
+    </div>
     
     
 </div>
@@ -239,6 +246,16 @@
     
 
 
+
+<script>
+    twikoo.init({
+        el: "#twikoo-container",
+        envId: "",
+        region: "",
+        path: location.pathname,
+        lang: "",
+    })
+</script>
 
 
     

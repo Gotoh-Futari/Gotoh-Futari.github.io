@@ -40,6 +40,8 @@
 
 
 
+<script src="/js/lib/search.js"></script>
+
 
 
 <link rel="stylesheet" href="/css/main.css" />
@@ -154,6 +156,8 @@
             
 <div id="archives">
     
+    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
+    
     <div id="timeline-wrap" ref="timeline">
         
         <div class="timeline" data-title="(•̀ω•́)y">
@@ -176,12 +180,12 @@
             </div>
         </div>
         
-        <div class="timeline" data-title="草东没有派对单曲收集">
+        <div class="timeline" data-title="草东没有派对">
             <div class="timeline-tail"></div>
             <div class="timeline-content">
                 <div class="item-time">2024/6/15</div>
-                <a href="/2024/06/15/NO%20party%20for%20caodong/">
-                    <h3>草东没有派对 单曲收集</h3>
+                <a href="/2024/06/15/3/">
+                    <h3>草东没有派对</h3>
                 </a>
             </div>
         </div>

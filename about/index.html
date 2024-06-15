@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>about | Bocchi The site!</title>
+    <title>About | Bocchi The site!</title>
     <meta name="author" content="Gotoh_Futari" />
     <meta name="description" content="Gotoh Futari的个人博客" />
     <meta name="keywords" content="Anime,Music,Rock,Blog,Code,Love" />
@@ -43,6 +43,8 @@
 
 
 
+
+<script src="https://s4.zstatic.net/ajax/libs/twikoo/1.6.31/twikoo.all.min.js"></script>
 
 
 
@@ -157,27 +159,42 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>about</h1>
+        <h1>About</h1>
     </div>
     <div class="info">
         <span class="date">
             <span class="icon">
                 <i class="fa-solid fa-calendar fa-fw"></i>
             </span>
-            2024/6/2
+            2024/6/15
         </span>
         
         
     </div>
     
     <div class="content" v-pre>
-        
+        <p style="text-align:center">
+这里是Gotoh Futari!
+neta的是《孤独摇滚！》中的後藤ふたり
+</p>
+<p style="text-align:center">
+目前是学生 在AIGC的潮流中迷茫
+目前是分享一些音乐，动漫资源什么的   Coding只是小爱好
+</p>
+<h1 style="text-align:center">Let’s connect</h1>
+
+
+
     </div>
     
     
     
     
     
+    
+    <div id="comment">
+        <div id="twikoo-container"></div>
+    </div>
     
     
 </div>
@@ -214,6 +231,16 @@
     
 
 
+
+<script>
+    twikoo.init({
+        el: "#twikoo-container",
+        envId: "",
+        region: "",
+        path: location.pathname,
+        lang: "",
+    })
+</script>
 
 
     
